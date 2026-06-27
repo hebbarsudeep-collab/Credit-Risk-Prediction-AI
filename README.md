@@ -31,6 +31,6 @@ The goal of this project is to predict whether a borrower will default on a pers
 * *Class 1 Recall:* 78% (Missed 399 defaults)
 * *Class 1 Precision:* 71%
 * *Verdict:* **The Goldilocks Zone.** Using XGBoost with `scale_pos_weight=3.5`, the model learned from its mistakes. It caught the highest number of defaults (highest recall) while simultaneously recovering precision (rejecting fewer good customers). 
-
+   ![XGBoost Confusion Matrix](confusion_matrix.png)
 ## How to Run
 The final trained AI is saved as `credit_risk_xgboost_model.pkl`. It can be easily loaded into any Python application using `joblib` for instant credit risk predictions on new loan applications.
